@@ -12,7 +12,7 @@
 bin/
 gen/
 out/
-
+.idea
 # Gradle files
 .gradle/
 build/
@@ -38,3 +38,5 @@ captures/
 
 # Keystore files
 *.jks
+.idea/
+

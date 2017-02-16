@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data class=".HouseItemBinding">
+
+        <variable
+            name="house"
+            type="com.fangdd.mobile.fddhouseownersell.demo.house.houseList.HouseItemViewModel"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:tag="@{house}"
+        android:clickable="true"
+        android:onClick="@{()->house.houseClick()}"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/house_name_height"
+            android:textSize="@dimen/house_name_size"
+            android:gravity="center"
+            android:text="@{house.houseName}"
+            />
+    </LinearLayout>
+</layout>
